@@ -1,0 +1,63 @@
+:root {
+  --purple: #4b21ff;
+  --white: #f1f1f1;
+}
+
+body {
+  overflow: hidden;
+}
+.page {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.9fr;
+}
+
+.left-side {
+  background-color: var(--purple);
+  height: 100vh;
+}
+
+.right-side {
+  background-color: var(--white);
+  min-height: 100vh;
+  grid-column: 2/4;
+}
+
+.image {
+  background-color: aqua;
+  min-width: 300px;
+  height: 90vh;
+  margin-top: 25px;
+  grid-column: 2/3;
+  position: relative;
+  left: -100px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.contact {
+  font-size: 1em;
+  color: var(--white);
+  position: absolute;
+  bottom: 10px;
+  margin: 30px;
+}
+
+.span {
+  width: 100px;
+  height: 10px;
+  background-color: var(--purple);
+  position: relative;
+  top: 100px;
+  margin: auto;
+}
+
+.details {
+  width: 200px;
+  position: absolute;
+  height: 400px;
+  right: 150px;
+}

@@ -55,7 +55,7 @@ a {
   height: 7px;
   background-color: var(--purple);
   position: relative;
-  top: 230px;
+  top: 37%;
   left: 180px;
   margin: auto;
 }
@@ -65,7 +65,7 @@ div.details {
   font-family: 'Arvo', serif;
   position: absolute;
   height: 400px;
-  right: 8%;
+  right: 6%;
   top: 30%;
   line-height: 1.4;
 }
@@ -103,4 +103,28 @@ button:nth-of-type(1) {
 .details span:nth-of-type(3) {
   font-weight: 600;
   font-family: 'Dosis', sans-serif;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  div.details {
+    position: absolute;
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  div.details {
+    position: absolute;
+    right: 15%;
+  }
+
+  .image {
+    background-image: url('');
+  }
+}
+
+@media screen (max-width: 400px) {
+  .page {
+    display: flex;
+  }
 }
